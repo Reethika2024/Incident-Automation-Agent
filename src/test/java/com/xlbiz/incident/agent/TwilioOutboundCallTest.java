@@ -7,6 +7,8 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
 
+import com.xlbiz.incident.agent.model.Incident;
+
 /**
  * Test script for Twilio outbound calling functionality
  * Tests making outbound calls for incident notifications
@@ -70,6 +72,13 @@ public class TwilioOutboundCallTest {
             System.out.println("Error: " + errorResponse);
         }
     }
+
+    @Test
+void shouldTriggerNotificationWhenStatusChanges() {
+    incidentService.updateIncidentStatus("INC-1", "RESOLVED");
+    // assert notification logic (mock or spy)
+}
+git 
     
     /**
      * Test incident notification call
