@@ -135,4 +135,18 @@ public class TwilioRecordingListTest {
             return "N/A";
         }
     }
+    public class NotificationService {
+
+        public void notifyStatusChange(
+            String incidentId, String oldStatus, String newStatus
+        ) {
+            System.out.println(
+                "[NOTIFICATION] Incident " + incidentId +
+                " changed from " + oldStatus +
+                " to " + newStatus +
+                " at " + LocalDateTime.now()
+            );
+        }
+    }
+    
 }
