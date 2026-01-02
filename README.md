@@ -361,6 +361,13 @@ curl -X GET "http://localhost:8080/api/knowledge/search?query=database+connectio
 ✅ **Outbound Calling** - Automated incident notifications via phone  
 ✅ **Comprehensive Analytics** - Performance metrics and audit trails  
 ✅ **Docker Support** - Containerized deployment with Docker Compose  
-✅ **Production Ready** - Health checks, monitoring, and error handling  
+✅ **Production Ready** - Health checks, monitoring, and error handling 
+
+## 🔔 Automated Notifications
+
+- Notifications are triggered when incident status changes
+- Logic is implemented using service-based architecture
+- Easily extendable to email or webhook integrations
+
 
 
