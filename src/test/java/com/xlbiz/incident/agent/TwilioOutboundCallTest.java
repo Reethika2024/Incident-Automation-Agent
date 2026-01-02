@@ -232,3 +232,25 @@ public class TwilioOutboundCallTest {
         }
     }
 }
+
+// // Example method where incident status is updated
+// public void updateIncidentStatus(String incidentId, String newStatus) {
+//     Incident incident = incidentRepository.findById(incidentId);
+
+//     String oldStatus = incident.getStatus();
+
+//     if (!oldStatus.equals(newStatus)) {
+//         incident.setStatus(newStatus);
+//         incidentRepository.save(incident);
+
+//         sendStatusChangeNotification(incidentId, oldStatus, newStatus);
+//     }
+// }
+
+// private void sendStatusChangeNotification(String incidentId, String oldStatus, String newStatus) {
+//     System.out.println(
+//         "[NOTIFICATION] Incident " + incidentId +
+//         " status changed from " + oldStatus +
+//         " to " + newStatus
+//     );
+// }
